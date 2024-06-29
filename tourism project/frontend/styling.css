@@ -1,0 +1,30 @@
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Add more CSS rules as needed to style specific elements */
+
+
+.success-message {
+  color: green;
+  text-align: center;
+}

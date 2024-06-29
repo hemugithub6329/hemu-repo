@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    <!-- Add custom CSS -->
+    <style>
+        body {
+            background-image: url('registration.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            max-width: 500px;
+            margin: 100px auto;
+            /* Center the container vertically and horizontally */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2 class="text-center">Login</h2>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-primary" id="register-button">Register</button>
+                <button type="button" class="btn btn-primary" id="login-button">Login</button>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Add Bootstrap JS and Popper.js (for Bootstrap functionality) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+    <!-- <script>
+        // JavaScript to handle form submission and page navigation
+        document.getElementById("login-button").addEventListener("click", function () {
+            // You can add your login validation logic here
+
+            // Redirect to the desired page (e.g., Home.html) after successful login
+            // window.location.href = "home.html";
+
+            // Redirect to the desired page (e.g., Home.html) in a new window/tab after successful login
+            window.open("home.html", "_blank");
+        });
+
+        document.getElementById("register-button").addEventListener("click", function () {
+            window.open("registration.html", "_blank");
+        });
+
+    </script> -->
+
+
+
+    <script>
+        document.getElementById('login-button').addEventListener('click', function () {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Create an object with the username and password
+            const credentials = {
+                username: username,
+                password: password
+            };
+
+            // Make a POST request to the Flask /login route
+            fetch('http://127.0.0.1:5000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(credentials),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // Handle the response
+                    if (data.message === "Login successful") {
+                        // Redirect to a dashboard or another page on successful login
+                        window.location.href = "home.html";
+                    } else {
+                        // Display an error message on failed login
+                        alert(data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        });
+
+
+
+        document.getElementById("register-button").addEventListener("click", function () {
+            window.open("registration.html", "_blank");
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    document.getElementById('login-button').addEventListener('click', function () {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Create an object with the username and password
+        const credentials = {
+            username: username,
+            password: password
+        };
+
+        // Make a POST request to the Flask /login route
+        fetch('/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(credentials),
+        })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response
+                if (data.message === "Login successful") {
+                    // Redirect to a dashboard or another page on successful login
+                    window.location.href = '/dashboard';
+                } else {
+                    // Display an error message on failed login
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
+</script>

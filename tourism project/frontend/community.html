@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel Details & Join with Social</title>
+    <style>
+        body {
+            background-image: url('community.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Enter Travel Details</h2>
+    <form>
+        <label for="fromDestination">From Destination:</label><br>
+        <input type="text" id="fromDestination" name="fromDestination" required><br><br>
+
+        <label for="toDestination">To Destination:</label><br>
+        <input type="text" id="toDestination" name="toDestination" required><br><br>
+
+        <label for="travelDate">Date:</label><br>
+        <input type="date" id="travelDate" name="travelDate" required><br><br>
+
+        <label for="transportMethod">Transport Method:</label><br>
+        <select id="transportMethod" name="transportMethod" required>
+            <option value="car">Car</option>
+            <option value="bus">Bus</option>
+            <option value="train">Train</option>
+            <option value="flight">Flight</option>
+        </select><br><br>
+
+        <label>Join with Others:</label><br>
+        <input type="radio" id="joinYes" name="joinOption" value="yes">
+        <label for="joinYes">Yes</label>
+        <input type="radio" id="joinNo" name="joinOption" value="no">
+        <label for="joinNo">No</label><br><br>
+
+        <!-- Social Login Buttons -->
+        <div>
+            <h3>Join with Social Platforms:</h3>
+            <button type="button" onclick="loginWithFacebook()">Login with Facebook</button>
+            <button type="button" onclick="loginWithGoogle()">Login with Google</button>
+            <!-- Add more social login buttons as needed -->
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- JavaScript functions for social login -->
+    <script>
+        function loginWithFacebook() {
+            // Implement Facebook login logic here
+            alert("Login with Facebook clicked");
+        }
+
+        function loginWithGoogle() {
+            // Implement Google login logic here
+            alert("Login with Google clicked");
+        }
+    </script>
+</body>
+
+</html>

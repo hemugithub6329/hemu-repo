@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Add Bootstrap CSS link for Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add custom CSS -->
+    <style>
+        /* Custom CSS for styling */
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Custom CSS for hover effect */
+        .nav-link:hover {
+            background-color: #555;
+            /* Change to your desired hover background color */
+            color: #fff;
+            /* Change to your desired hover text color */
+            transition: background-color 0.3s ease, color 0.3s ease;
+            /* Smooth transition */
+        }
+
+        .states-dd {
+            padding-top: 75px;
+        }
+
+        /* Custom CSS for styling the content */
+        .main {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            color: #007bff;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .subsection-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .section-content {
+            transition: background-color 0.3s ease, color 0.3s ease;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .section-content:hover {
+            background-color: #f0f0f0;
+            /* Change to your desired hover background color */
+            color: #333;
+            /* Change to your desired hover text color */
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header">
+        <h1>Sri Venkateswara Temple</h1>
+        <p>A famous pilgrimage site dedicated to Lord Venkateswara located in Tirumala. It is one of the richest and
+            most-visited temples in the world.</p>
+    </div>
+
+
+    <!-- Sidebar and Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accomodation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Near-by-places</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Guides info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tips</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="col-md-8">
+                <div class="container main d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <div class="text-center">
+                            <h2>Sri Venkateswara Temple</h2>
+
+
+                            <div id="accordion">
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                            History of Sri Venkateswara Temple
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                        <div class="card-body">
+                                            The Sri Venkateswara Temple, also known as the Tirupati Temple, has a rich
+                                            and
+                                            ancient history. It is believed to have been constructed over a period of
+                                            several centuries and has undergone numerous renovations and expansions.
+
+                                            According to legend, the temple was originally established by Lord
+                                            Venkateswara
+                                            himself to fulfill a promise made to Goddess Padmavati. The temple has been
+                                            a
+                                            center of pilgrimage for devotees from all over India and is considered one
+                                            of
+                                            the holiest shrines in Hinduism.
+
+                                            Over the centuries, various dynasties and rulers have contributed to the
+                                            temple's development and maintenance. The temple complex includes several
+                                            sub-temples, halls, and sacred tanks.
+
+                                            Today, the Sri Venkateswara Temple continues to be a place of immense
+                                            spiritual
+                                            significance and attracts millions of devotees each year.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                            Significance of Sri Venkateswara Temple
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            The Sri Venkateswara Temple holds immense significance in Hinduism and draws
+                                            millions of pilgrims and devotees every year. It is believed that visiting
+                                            the
+                                            temple and seeking the blessings of Lord Venkateswara can grant spiritual
+                                            fulfillment and prosperity. Devotees offer prayers and donations at the
+                                            temple,
+                                            contributing to its wealth and resources.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                            Architectural Marvel
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            The Sri Venkateswara Temple is renowned for its stunning architectural
+                                            design.
+                                            The temple's architecture combines elements of Dravidian and Rajput styles,
+                                            resulting in a unique and visually captivating structure.
+
+                                            The temple's gopurams (entrance towers) are particularly impressive, adorned
+                                            with intricate sculptures and carvings that depict various episodes from
+                                            Hindu
+                                            mythology. The main deity's sanctum sanctorum is a masterpiece of
+                                            craftsmanship
+                                            and devotion.
+
+                                            Visitors to the temple can marvel at the detailed work on the walls,
+                                            pillars,
+                                            and ceilings, all of which showcase the exceptional skills of the artisans
+                                            who
+                                            contributed to its construction.
+
+                                            The temple's architectural splendor is not only a testament to the rich
+                                            cultural
+                                            heritage of India but also a symbol of the deep spiritual significance of
+                                            the
+                                            site.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                                            Visiting Information
+                                        </a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            The Sri Venkateswara Temple is open to visitors throughout the year. Here is
+                                            some essential information for those planning to visit the temple:
+                                            <ul>
+                                                <li>Temple Timings: The temple opens early in the morning and closes in
+                                                    the
+                                                    evening. Exact timings may vary, so it's advisable to check in
+                                                    advance.</li>
+                                                <li>Dress Code: Devotees are expected to wear traditional attire while
+                                                    entering
+                                                    the temple. Shorts and sleeveless tops are not allowed.</li>
+                                                <li>Footwear: Shoes are not allowed inside the temple premises. There
+                                                    are
+                                                    designated areas for footwear storage.</li>
+                                                <!-- Add more visiting information as needed -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+
+        </div>
+    </div>
+
+    <!-- Add Bootstrap 4 JS and Popper.js (for Bootstrap functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

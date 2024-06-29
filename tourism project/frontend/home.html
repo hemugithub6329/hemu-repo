@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Add Bootstrap CSS link for Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add custom CSS -->
+    <style>
+        body {
+            background-image: url('your-background-image.jpg');
+            /* Replace 'registration.jpg' with your image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Custom CSS for hover effect */
+        .nav-link:hover {
+            background-color: #555;
+            /* Change to your desired hover background color */
+            color: #fff;
+            /* Change to your desired hover text color */
+            transition: background-color 0.3s ease, color 0.3s ease;
+            /* Smooth transition */
+        }
+
+        .states-dd {
+            padding-top: 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Welcome to TravelHub</h1>
+        <p>"Travel makes one modest. You see what a tiny place you occupy in the world." - Gustave Flaubert</p>
+    </div>
+
+    <!-- Sidebar and Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.showaround.com/">local guide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="community.html">community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Top_destinations.html">Top Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="https://in.hotels.com/?locale=en_IN&pos=HCOM_IN&siteid=300000036">hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="https://www.google.co.in/maps/@13.2976375,79.1209822,15z?entry=ttu">location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tips.html">Tips & Guide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout.html">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-8">
+                <div class="container main d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h2>Explore India</h2>
+                        <p class="text-justify">India is a land of diverse cultures, rich history, breathtaking
+                            landscapes, and vibrant
+                            traditions. From the majestic Himalayas in the north to the serene backwaters of Kerala in
+                            the south, from the bustling cities like Mumbai and Delhi to the peaceful temples of
+                            Varanasi, India offers a kaleidoscope of experiences. Explore ancient palaces, taste a
+                            variety of cuisines, and witness colorful festivals that celebrate the spirit of the
+                            country. Come and discover the incredible beauty and warmth of India's people, making it one
+                            of the best destinations for travelers.</p>
+
+                        <div class="states-dd">
+                            <label for="states">Select your destination:</label>
+                            <select id="states">
+                                <option value="">-- Select State --</option>
+                                <option value="Andhra Pradesh" selected>Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                            </select>
+
+                            <button class="btn btn-primary mx-auto" id="explore">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap 4 JS and Popper.js (for Bootstrap functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // document.getElementById("explore").addEventListener("click", function () {
+        //     const selectedState = document.getElementById("states").value;
+        //     if (selectedState) {
+        //         window.location.href = selectedState.toLowerCase().replace(/ /g, "_") + ".html";
+        //     }
+        // });
+
+        document.getElementById("explore").addEventListener("click", function () {
+            const selectedState = document.getElementById("states").value;
+            if (selectedState) {
+                const stateUrl = selectedState.toLowerCase().replace(/ /g, "_") + ".html";
+                window.open(stateUrl, '_blank');
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <script>
+        // JavaScript code to handle the selected state
+        const stateDropdown = document.getElementById("states");
+
+        stateDropdown.addEventListener("change", function() {
+            const selectedState = stateDropdown.value;
+            if (selectedState !== "") {
+                alert("You selected: " + selectedState);
+            }
+        });
+    </script>
+ -->
